@@ -1,0 +1,13 @@
+{
+  "name": "tools.1c",
+  "version": "1.0.4",
+  "main": "",
+  "ignore": [
+    "source",
+    ".gitignore",
+    ".idea",
+    "bower.json",
+    "gulpfile.js",
+    "package.json"
+  ]
+}
