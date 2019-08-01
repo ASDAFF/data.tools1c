@@ -1,18 +1,21 @@
-<?
-        
-class CSnsToolsEvent
+<?php
+/**
+ * Copyright (c) 1/8/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+class CTool1sEvent
 {     
 
     function OnAfterIBlockElementAdd(&$arFields) {
     
         //заполним артикул в предложениях   
         // начало
-        $CHEXBOX_ARTICLE = COption::GetOptionString('sns.tools1c' , "CHEXBOX_ARTICLE");     
+        $CHEXBOX_ARTICLE = COption::GetOptionString('tools.1c' , "CHEXBOX_ARTICLE");
         if(CModule::IncludeModule("iblock") && $CHEXBOX_ARTICLE == 'Y') {
             if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) {    
-                $OFFERS_ARTICLE = COption::GetOptionString('sns.tools1c' , "OFFERS_ARTICLE");
-                $OFFERS_LINK = COption::GetOptionString('sns.tools1c' , "OFFERS_LINK");
-                $CATALOG_ARTICLE = COption::GetOptionString('sns.tools1c' , "CATALOG_ARTICLE");  
+                $OFFERS_ARTICLE = COption::GetOptionString('tools.1c' , "OFFERS_ARTICLE");
+                $OFFERS_LINK = COption::GetOptionString('tools.1c' , "OFFERS_LINK");
+                $CATALOG_ARTICLE = COption::GetOptionString('tools.1c' , "CATALOG_ARTICLE");
                 
                 $arSelectOffers = Array("PROPERTY_".$OFFERS_ARTICLE ,  "PROPERTY_".$OFFERS_LINK.".PROPERTY_".$CATALOG_ARTICLE);
                 $arFilterOffers = Array("ID"=>$arFields['ID']);
@@ -34,12 +37,12 @@ class CSnsToolsEvent
         
         // свяжем справочники с торговыми предложениями
        // начало
-       $CHEXBOX_OFFERS_PROPERTIES = COption::GetOptionString('sns.tools1c' , "CHEXBOX_OFFERS_PROPERTIES");      
+       $CHEXBOX_OFFERS_PROPERTIES = COption::GetOptionString('tools.1c' , "CHEXBOX_OFFERS_PROPERTIES");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_OFFERS_PROPERTIES == 'Y') { 
 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) { 
 
-               $OFFERS_ATTRIBUTES = COption::GetOptionString('sns.tools1c' , "OFFERS_ATTRIBUTES");       
+               $OFFERS_ATTRIBUTES = COption::GetOptionString('tools.1c' , "OFFERS_ATTRIBUTES");
                $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => $OFFERS_ATTRIBUTES));
                while ($ob = $db_props->GetNext())
                {
@@ -86,11 +89,11 @@ class CSnsToolsEvent
         
        // выгрузим свойства характеристик в отдельные свойста типа стройка 
        // начало         
-       $CHEXBOX_OFFERS_PROPERTIES_STRING = COption::GetOptionString('sns.tools1c' , "CHEXBOX_OFFERS_PROPERTIES_STRING");      
+       $CHEXBOX_OFFERS_PROPERTIES_STRING = COption::GetOptionString('tools.1c' , "CHEXBOX_OFFERS_PROPERTIES_STRING");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_OFFERS_PROPERTIES_STRING == 'Y') { 
 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) { 
-               $OFFERS_ATTRIBUTES = COption::GetOptionString('sns.tools1c' , "OFFERS_ATTRIBUTES");       
+               $OFFERS_ATTRIBUTES = COption::GetOptionString('tools.1c' , "OFFERS_ATTRIBUTES");
                $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => $OFFERS_ATTRIBUTES));
                while ($ob = $db_props->GetNext())
                { 
@@ -113,11 +116,11 @@ class CSnsToolsEvent
            
         // реализуем множественные свойства
         // начало
-       $CHEXBOX_MULTIPROPER = COption::GetOptionString('sns.tools1c' , "CHEXBOX_MULTIPROPER");  
+       $CHEXBOX_MULTIPROPER = COption::GetOptionString('tools.1c' , "CHEXBOX_MULTIPROPER");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_MULTIPROPER == 'Y') { 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'import')) { 
                
-                $STRING_MULTIPROPER_ID = COption::GetOptionString('sns.tools1c' , "STRING_MULTIPROPER_ID"); 
+                $STRING_MULTIPROPER_ID = COption::GetOptionString('tools.1c' , "STRING_MULTIPROPER_ID");
                 if(!empty($STRING_MULTIPROPER_ID)) {
                     $STRING_MULTIPROPER_ID = explode(',' , $STRING_MULTIPROPER_ID);
                     if(!is_array($STRING_MULTIPROPER_ID)) {
@@ -126,7 +129,7 @@ class CSnsToolsEvent
                 }
 
                                
-                $STRING_MULTIPROPER_RAZDEL = COption::GetOptionString('sns.tools1c' , "STRING_MULTIPROPER_RAZDEL"); 
+                $STRING_MULTIPROPER_RAZDEL = COption::GetOptionString('tools.1c' , "STRING_MULTIPROPER_RAZDEL");
                  
       
                 $spacer =  array($STRING_MULTIPROPER_RAZDEL);
@@ -187,12 +190,12 @@ class CSnsToolsEvent
         
         //заполним артикул в предложениях   
         // начало
-        $CHEXBOX_ARTICLE = COption::GetOptionString('sns.tools1c' , "CHEXBOX_ARTICLE");     
+        $CHEXBOX_ARTICLE = COption::GetOptionString('tools.1c' , "CHEXBOX_ARTICLE");
         if(CModule::IncludeModule("iblock") && $CHEXBOX_ARTICLE == 'Y') {
             if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) {    
-                $OFFERS_ARTICLE = COption::GetOptionString('sns.tools1c' , "OFFERS_ARTICLE");
-                $OFFERS_LINK = COption::GetOptionString('sns.tools1c' , "OFFERS_LINK");
-                $CATALOG_ARTICLE = COption::GetOptionString('sns.tools1c' , "CATALOG_ARTICLE");  
+                $OFFERS_ARTICLE = COption::GetOptionString('tools.1c' , "OFFERS_ARTICLE");
+                $OFFERS_LINK = COption::GetOptionString('tools.1c' , "OFFERS_LINK");
+                $CATALOG_ARTICLE = COption::GetOptionString('tools.1c' , "CATALOG_ARTICLE");
                 
                 $arSelectOffers = Array("PROPERTY_".$OFFERS_ARTICLE ,  "PROPERTY_".$OFFERS_LINK.".PROPERTY_".$CATALOG_ARTICLE);
                 $arFilterOffers = Array("ID"=>$arFields['ID']);
@@ -210,12 +213,12 @@ class CSnsToolsEvent
         
        // свяжем справочники с торговыми предложениями
        // начало
-       $CHEXBOX_OFFERS_PROPERTIES = COption::GetOptionString('sns.tools1c' , "CHEXBOX_OFFERS_PROPERTIES");      
+       $CHEXBOX_OFFERS_PROPERTIES = COption::GetOptionString('tools.1c' , "CHEXBOX_OFFERS_PROPERTIES");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_OFFERS_PROPERTIES == 'Y') { 
 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) { 
 
-               $OFFERS_ATTRIBUTES = COption::GetOptionString('sns.tools1c' , "OFFERS_ATTRIBUTES");       
+               $OFFERS_ATTRIBUTES = COption::GetOptionString('tools.1c' , "OFFERS_ATTRIBUTES");
                $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => $OFFERS_ATTRIBUTES));
                while ($ob = $db_props->GetNext())
                {
@@ -261,11 +264,11 @@ class CSnsToolsEvent
        
        // выгрузим свойства характеристик в отдельные свойста типа стройка 
        // начало    
-       $CHEXBOX_OFFERS_PROPERTIES_STRING = COption::GetOptionString('sns.tools1c' , "CHEXBOX_OFFERS_PROPERTIES_STRING");      
+       $CHEXBOX_OFFERS_PROPERTIES_STRING = COption::GetOptionString('tools.1c' , "CHEXBOX_OFFERS_PROPERTIES_STRING");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_OFFERS_PROPERTIES_STRING == 'Y') { 
 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'offers')) { 
-               $OFFERS_ATTRIBUTES = COption::GetOptionString('sns.tools1c' , "OFFERS_ATTRIBUTES");       
+               $OFFERS_ATTRIBUTES = COption::GetOptionString('tools.1c' , "OFFERS_ATTRIBUTES");
                $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => $OFFERS_ATTRIBUTES));
                while ($ob = $db_props->GetNext())
                { 
@@ -288,11 +291,11 @@ class CSnsToolsEvent
  
         // реализуем множественные свойства
         // начало
-       $CHEXBOX_MULTIPROPER = COption::GetOptionString('sns.tools1c' , "CHEXBOX_MULTIPROPER");  
+       $CHEXBOX_MULTIPROPER = COption::GetOptionString('tools.1c' , "CHEXBOX_MULTIPROPER");
        if(CModule::IncludeModule("iblock") && $CHEXBOX_MULTIPROPER == 'Y') { 
            if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'import')) { 
                
-                $STRING_MULTIPROPER_ID = COption::GetOptionString('sns.tools1c' , "STRING_MULTIPROPER_ID"); 
+                $STRING_MULTIPROPER_ID = COption::GetOptionString('tools.1c' , "STRING_MULTIPROPER_ID");
                 if(!empty($STRING_MULTIPROPER_ID)) {
                     $STRING_MULTIPROPER_ID = explode(',' , $STRING_MULTIPROPER_ID);
                     if(!is_array($STRING_MULTIPROPER_ID)) {
@@ -301,7 +304,7 @@ class CSnsToolsEvent
                 }
 
                                
-                $STRING_MULTIPROPER_RAZDEL = COption::GetOptionString('sns.tools1c' , "STRING_MULTIPROPER_RAZDEL"); 
+                $STRING_MULTIPROPER_RAZDEL = COption::GetOptionString('tools.1c' , "STRING_MULTIPROPER_RAZDEL");
                  
       
                 $spacer =  array($STRING_MULTIPROPER_RAZDEL);
@@ -363,7 +366,7 @@ class CSnsToolsEvent
         // не обновлять элементы при выгрузке из 1С
         if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import' && strstr($_GET['filename'], 'import')) {
             
-            $SELECT_NONE_UPDATE = unserialize(COption::GetOptionString('sns.tools1c' , "SELECT_NONE_UPDATE"));
+            $SELECT_NONE_UPDATE = unserialize(COption::GetOptionString('tools.1c' , "SELECT_NONE_UPDATE"));
             if(in_array('PREVIEW_TEXT',$SELECT_NONE_UPDATE)) {
                 $SELECT_NONE_UPDATE[] = 'PREVIEW_TEXT_TYPE';    
             }  
@@ -379,7 +382,7 @@ class CSnsToolsEvent
             }
 
             /*   
-            $STRING_NONE_UPDATE_PROPER = COption::GetOptionString('sns.tools1c' , "STRING_NONE_UPDATE_PROPER");
+            $STRING_NONE_UPDATE_PROPER = COption::GetOptionString('tools.1c' , "STRING_NONE_UPDATE_PROPER");
             $STRING_NONE_UPDATE_PROPER = explode(',' , $STRING_NONE_UPDATE_PROPER); 
             if($STRING_NONE_UPDATE_PROPER){    
                 foreach($STRING_NONE_UPDATE_PROPER as $selValProp) {
@@ -397,10 +400,10 @@ class CSnsToolsEvent
       
     function OnBeforeProductAdd(&$arFields){
         if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import') {
-            $CHEXBOX_QUALITY = COption::GetOptionString('sns.tools1c' , "CHEXBOX_QUALITY");
-            $INT_QUALITY_DEFAULT = COption::GetOptionString('sns.tools1c' , "INT_QUALITY_DEFAULT");
-            $CHEXBOX_VAT_INCLUDED = COption::GetOptionString('sns.tools1c' , "CHEXBOX_VAT_INCLUDED"); 
-            $SELECT_VAT = COption::GetOptionString('sns.tools1c' , "SELECT_VAT");
+            $CHEXBOX_QUALITY = COption::GetOptionString('tools.1c' , "CHEXBOX_QUALITY");
+            $INT_QUALITY_DEFAULT = COption::GetOptionString('tools.1c' , "INT_QUALITY_DEFAULT");
+            $CHEXBOX_VAT_INCLUDED = COption::GetOptionString('tools.1c' , "CHEXBOX_VAT_INCLUDED");
+            $SELECT_VAT = COption::GetOptionString('tools.1c' , "SELECT_VAT");
 
             if($CHEXBOX_QUALITY == 'Y') {
                 $arFields["QUANTITY_TRACE"] = $CHEXBOX_QUALITY;
@@ -421,10 +424,10 @@ class CSnsToolsEvent
     
     function OnBeforeProductUpdate($ID, &$arFields){
         if($_GET['type'] == 'catalog' && $_GET['mode'] == 'import') {
-            $CHEXBOX_QUALITY = COption::GetOptionString('sns.tools1c' , "CHEXBOX_QUALITY");
-            $INT_QUALITY_DEFAULT = COption::GetOptionString('sns.tools1c' , "INT_QUALITY_DEFAULT");
-            $CHEXBOX_VAT_INCLUDED = COption::GetOptionString('sns.tools1c' , "CHEXBOX_VAT_INCLUDED"); 
-            $SELECT_VAT = COption::GetOptionString('sns.tools1c' , "SELECT_VAT");
+            $CHEXBOX_QUALITY = COption::GetOptionString('tools.1c' , "CHEXBOX_QUALITY");
+            $INT_QUALITY_DEFAULT = COption::GetOptionString('tools.1c' , "INT_QUALITY_DEFAULT");
+            $CHEXBOX_VAT_INCLUDED = COption::GetOptionString('tools.1c' , "CHEXBOX_VAT_INCLUDED");
+            $SELECT_VAT = COption::GetOptionString('tools.1c' , "SELECT_VAT");
 
             if($CHEXBOX_QUALITY == 'Y') {
                 $arFields["QUANTITY_TRACE"] = $CHEXBOX_QUALITY;

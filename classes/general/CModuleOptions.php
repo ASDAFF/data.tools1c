@@ -1,5 +1,9 @@
 <?
-IncludeModuleLangFile(__FILE__);    
+/**
+ * Copyright (c) 1/8/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+IncludeModuleLangFile(__FILE__);
 class CModuleOptions
 {
     public $arCurOptionValues = array();
@@ -21,9 +25,9 @@ class CModuleOptions
         if($need_access_tab)
             $this->arTabs[] = array(
                 'DIV' => 'edit_access_tab',
-                'TAB' => GetMessage("sns.tools1c_access_Tab"),
+                'TAB' => GetMessage("tools.1c_access_Tab"),
                 'ICON' => '',
-                'TITLE' => GetMessage("sns.tools1c_access_title")
+                'TITLE' => GetMessage("tools.1c_access_title")
             );
         
         if($_REQUEST['update'] == 'Y' && check_bitrix_sessid())
@@ -124,7 +128,7 @@ class CModuleOptions
                         $APPLICATION->IncludeComponent('bitrix:main.colorpicker', '', Array(
                                 'SHOW_BUTTON' => 'Y',
                                 'ID' => $opt,
-                                'NAME' => GetMessage("sns.tools1c_choice_color"),
+                                'NAME' => GetMessage("tools.1c_choice_color"),
                                 'ONSELECT' => 'onSelect_'.$opt
                             ), false
                         );
@@ -225,8 +229,8 @@ class CModuleOptions
             $tabControl->Buttons();
             
             echo     '<input type="hidden" name="update" value="Y" />
-                    <input type="submit" name="save" value="' .GetMessage("sns.tools1c_submit_save"). '" />
-                    <input type="reset" name="reset" value="' .GetMessage("sns.tools1c_submit_cancel"). '" />
+                    <input type="submit" name="save" value="' .GetMessage("tools.1c_submit_save"). '" />
+                    <input type="reset" name="reset" value="' .GetMessage("tools.1c_submit_cancel"). '" />
                     </form>';
 
             $tabControl->End();

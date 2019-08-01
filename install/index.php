@@ -1,10 +1,14 @@
 <?
+/**
+ * Copyright (c) 1/8/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 IncludeModuleLangFile(__FILE__);
 
-Class sns_tools1c extends CModule
+Class tools_1c extends CModule
 {
-    const MODULE_ID = 'sns.tools1c';
-    var $MODULE_ID = 'sns.tools1c';
+    const MODULE_ID = 'tools.1c';
+    var $MODULE_ID = 'tools.1c';
     var $MODULE_VERSION;
     var $MODULE_VERSION_DATE;
     var $MODULE_NAME;
@@ -18,27 +22,27 @@ Class sns_tools1c extends CModule
         include(dirname(__FILE__) . "/version.php");
         $this->MODULE_VERSION = $arModuleVersion["VERSION"];
         $this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
-        $this->MODULE_NAME = GetMessage("sns.tools1c_MODULE_NAME");
-        $this->MODULE_DESCRIPTION = GetMessage("sns.tools1c_MODULE_DESC");
+        $this->MODULE_NAME = GetMessage("1c_MODULE_NAME");
+        $this->MODULE_DESCRIPTION = GetMessage("1c_MODULE_DESC");
 
-        $this->PARTNER_NAME = GetMessage("sns.tools1c_PARTNER_NAME");
-        $this->PARTNER_URI = GetMessage("sns.tools1c_PARTNER_URI");
+        $this->PARTNER_NAME = GetMessage("1c_PARTNER_NAME");
+        $this->PARTNER_URI = GetMessage("1c_PARTNER_URI");
     }
 
     function InstallDB($arParams = array())
     {
         RegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CSnsToolsC', 'OnBuildGlobalMenu');
 
-        RegisterModuleDependences('iblock', 'OnAfterIBlockElementAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnAfterIBlockElementAdd');
-        RegisterModuleDependences('iblock', 'OnAfterIBlockElementUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnAfterIBlockElementUpdate');
+        RegisterModuleDependences('iblock', 'OnAfterIBlockElementAdd', self::MODULE_ID, 'CTool1sEvent', 'OnAfterIBlockElementAdd');
+        RegisterModuleDependences('iblock', 'OnAfterIBlockElementUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnAfterIBlockElementUpdate');
 
-        RegisterModuleDependences('iblock', 'OnBeforeIBlockElementAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeIBlockElementAdd');
-        RegisterModuleDependences('iblock', 'OnBeforeIBlockElementUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeIBlockElementUpdate');
+        RegisterModuleDependences('iblock', 'OnBeforeIBlockElementAdd', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeIBlockElementAdd');
+        RegisterModuleDependences('iblock', 'OnBeforeIBlockElementUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeIBlockElementUpdate');
 
-        RegisterModuleDependences('catalog', 'OnBeforeProductAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeProductAdd');
-        RegisterModuleDependences('catalog', 'OnBeforeProductUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeProductUpdate');
-        RegisterModuleDependences('catalog', 'OnPriceAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnPriceAdd');
-        RegisterModuleDependences('catalog', 'OnPriceUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnPriceUpdate');
+        RegisterModuleDependences('catalog', 'OnBeforeProductAdd', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeProductAdd');
+        RegisterModuleDependences('catalog', 'OnBeforeProductUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeProductUpdate');
+        RegisterModuleDependences('catalog', 'OnPriceAdd', self::MODULE_ID, 'CTool1sEvent', 'OnPriceAdd');
+        RegisterModuleDependences('catalog', 'OnPriceUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnPriceUpdate');
 
         return true;
     }
@@ -47,16 +51,16 @@ Class sns_tools1c extends CModule
     {
         UnRegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CSnsToolsC', 'OnBuildGlobalMenu');
 
-        UnRegisterModuleDependences('iblock', 'OnAfterIBlockElementAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnAfterIBlockElementAdd');
-        UnRegisterModuleDependences('iblock', 'OnAfterIBlockElementUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnAfterIBlockElementUpdate');
+        UnRegisterModuleDependences('iblock', 'OnAfterIBlockElementAdd', self::MODULE_ID, 'CTool1sEvent', 'OnAfterIBlockElementAdd');
+        UnRegisterModuleDependences('iblock', 'OnAfterIBlockElementUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnAfterIBlockElementUpdate');
 
-        UnRegisterModuleDependences('iblock', 'OnBeforeIBlockElementAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeIBlockElementAdd');
-        UnRegisterModuleDependences('iblock', 'OnBeforeIBlockElementUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeIBlockElementUpdate');
+        UnRegisterModuleDependences('iblock', 'OnBeforeIBlockElementAdd', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeIBlockElementAdd');
+        UnRegisterModuleDependences('iblock', 'OnBeforeIBlockElementUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeIBlockElementUpdate');
 
-        UnRegisterModuleDependences('catalog', 'OnBeforeProductAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeProductAdd');
-        UnRegisterModuleDependences('catalog', 'OnBeforeProductUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnBeforeProductUpdate');
-        UnRegisterModuleDependences('catalog', 'OnPriceAdd', self::MODULE_ID, 'CSnsToolsEvent', 'OnPriceAdd');
-        UnRegisterModuleDependences('catalog', 'OnPriceUpdate', self::MODULE_ID, 'CSnsToolsEvent', 'OnPriceUpdate');
+        UnRegisterModuleDependences('catalog', 'OnBeforeProductAdd', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeProductAdd');
+        UnRegisterModuleDependences('catalog', 'OnBeforeProductUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnBeforeProductUpdate');
+        UnRegisterModuleDependences('catalog', 'OnPriceAdd', self::MODULE_ID, 'CTool1sEvent', 'OnPriceAdd');
+        UnRegisterModuleDependences('catalog', 'OnPriceUpdate', self::MODULE_ID, 'CTool1sEvent', 'OnPriceUpdate');
 
         return true;
     }
