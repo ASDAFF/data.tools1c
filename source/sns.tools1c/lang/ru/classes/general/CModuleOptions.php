@@ -1,7 +1,8 @@
 <?
-$MESS["sns.tools1c_access_Tab"] = "Права доступа";  
-$MESS["sns.tools1c_access_title"] = "Настройка прав доступа";
-$MESS["sns.tools1c_choice_color"] = "Выбор цвета";   
-$MESS["sns.tools1c_submit_save"] = "Сохранить";
-$MESS["sns.tools1c_submit_cancel"] = "Отменить";
+$iModuleID  = 'sns.tools1c';  
+$MESS[$iModuleID."_access_Tab"] = "Права доступа";  
+$MESS[$iModuleID."_access_title"] = "Настройка прав доступа";
+$MESS[$iModuleID."_choice_color"] = "Выбор цвета";   
+$MESS[$iModuleID."_submit_save"] = "Сохранить";
+$MESS[$iModuleID."_submit_cancel"] = "Отменить";
 ?>

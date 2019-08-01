@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sns.tools1c/admin/property_1c_tools.php");?>     
