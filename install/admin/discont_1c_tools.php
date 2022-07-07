@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/data.tools1c/admin/discont_1c_tools.php");?>     

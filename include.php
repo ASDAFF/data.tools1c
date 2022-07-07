@@ -1,13 +1,17 @@
 <?
-/**
- * Copyright (c) 1/8/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
- */
-
+$module_id = 'data.tools1c';
+   
+CModule::IncludeModule("iblock");   
+CModule::IncludeModule("catalog");   
 CModule::AddAutoloadClasses(
-    "tools.1c",
+    $module_id,
     array(
-        "CModuleOptions" => "classes/general/CModuleOptions.php",
-        "CTool1sEvent" => "classes/general/CTool1sEvent.php"
+        "CModuleOptions" => "classes/general/CModuleOptions.php", 
+        "CDataToolsEvent" => "classes/general/CDataTools1c.php",
+        "CDataToolsIblock" => "classes/mysql/CDataToolsIblock.php",  
+        "CDataToolsProperty" => "classes/mysql/CDataToolsProperty.php",
+        "CDataToolsDiscount" => "classes/mysql/CDataToolsDiscount.php",
     )
 );
+
 ?>

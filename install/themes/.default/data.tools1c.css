@@ -1,0 +1,27 @@
+/*Menu icon*/
+#tools1c_menu_icon {background-image:url(icons/data.tools1c/icon.jpg);}
+#tools1c_page_icon {background-image:url(icons/data.tools1c/icon_page.jpg);}
+
+.tools1c_menu_icon {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image:url(icons/data.tools1c/icon.png) !important;
+}
+.tools1c_page_icon {
+    background-position:  center !important;
+    background-repeat: no-repeat !important;
+    background-image:url(icons/data.tools1c/icon_page.png) !important;
+}
+
+
+.aDelete
+{
+    margin:5px;
+    text-decoration:underline;
+    cursor:pointer;
+    color:#2747BF;
+}
+.dAdded
+{
+    margin-top:10px;
+}

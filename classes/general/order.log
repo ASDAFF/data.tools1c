@@ -1,0 +1,380 @@
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 2
+    [PRICE] => 2070.71
+    [CURRENCY] => RUB
+    [USER_ID] => 97
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 280.71
+    [DELIVERY_ID] => 137
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 17990
+    [CURRENCY] => RUB
+    [USER_ID] => 98
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => 
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 18490
+    [CURRENCY] => RUB
+    [USER_ID] => 98
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 0.00
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => N
+    [STATUS_ID] => N
+    [RESERVED] => N
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 17990
+    [CURRENCY] => RUB
+    [USER_ID] => 98
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => 
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 18490
+    [CURRENCY] => RUB
+    [USER_ID] => 98
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 0.00
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => N
+    [STATUS_ID] => N
+    [RESERVED] => N
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 3666.67
+    [CURRENCY] => RUB
+    [USER_ID] => 100
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 476.67
+    [DELIVERY_ID] => 138
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 2
+    [PRICE] => 3190
+    [CURRENCY] => RUB
+    [USER_ID] => 101
+    [PAY_SYSTEM_ID] => 7
+    [PRICE_DELIVERY] => 0
+    [DELIVERY_ID] => 2
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 2
+    [PRICE] => 3190
+    [CURRENCY] => RUB
+    [USER_ID] => 101
+    [PAY_SYSTEM_ID] => 4
+    [PRICE_DELIVERY] => 0
+    [DELIVERY_ID] => 2
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 0.00
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => N
+    [STATUS_ID] => N
+    [RESERVED] => N
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 26487.5
+    [CURRENCY] => RUB
+    [USER_ID] => 102
+    [PAY_SYSTEM_ID] => 4
+    [PRICE_DELIVERY] => 147.5
+    [DELIVERY_ID] => 134
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 28717.17
+    [CURRENCY] => RUB
+    [USER_ID] => 103
+    [PAY_SYSTEM_ID] => 4
+    [PRICE_DELIVERY] => 727.17
+    [DELIVERY_ID] => 138
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 49202.02
+    [CURRENCY] => RUB
+    [USER_ID] => 104
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 932.02
+    [DELIVERY_ID] => 137
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 195017.5
+    [CURRENCY] => RUB
+    [USER_ID] => 107
+    [PAY_SYSTEM_ID] => 4
+    [PRICE_DELIVERY] => 147.5
+    [DELIVERY_ID] => 134
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 84460
+    [CURRENCY] => RUB
+    [USER_ID] => 3
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => 
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 5890
+    [CURRENCY] => RUB
+    [USER_ID] => 109
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => 
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 3666.67
+    [CURRENCY] => RUB
+    [USER_ID] => 100
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 476.67
+    [DELIVERY_ID] => 138
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 2
+    [PRICE] => 76971.47
+    [CURRENCY] => RUB
+    [USER_ID] => 1
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 641.47
+    [DELIVERY_ID] => 137
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 3
+    [PRICE] => 28535.35
+    [CURRENCY] => RUB
+    [USER_ID] => 1
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 545.35
+    [DELIVERY_ID] => 137
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 22541.72
+    [CURRENCY] => RUB
+    [USER_ID] => 112
+    [PAY_SYSTEM_ID] => 4
+    [PRICE_DELIVERY] => 551.72
+    [DELIVERY_ID] => 137
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 25990
+    [CURRENCY] => RUB
+    [USER_ID] => 113
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 
+    [TRACKING_NUMBER] => 
+    [PAYED] => 
+    [CANCELED] => 
+    [STATUS_ID] => N
+    [RESERVED] => 
+)
+Array
+(
+    [SITE_ID] => s1
+    [LID] => s1
+    [PERSON_TYPE_ID] => 1
+    [PRICE] => 26490
+    [CURRENCY] => RUB
+    [USER_ID] => 113
+    [PAY_SYSTEM_ID] => 3
+    [PRICE_DELIVERY] => 500
+    [DELIVERY_ID] => 1
+    [DISCOUNT_VALUE] => 0
+    [TAX_VALUE] => 0.00
+    [TRACKING_NUMBER] => 
+    [PAYED] => N
+    [CANCELED] => N
+    [STATUS_ID] => N
+    [RESERVED] => N
+)
